@@ -30,3 +30,4 @@ v1.1.1 @ 2020-10-20
 
 CURRENT:
 [2020-10-22 01:01:01 CDT] - [git-mtime] Restores the file modification times of your git workdir to the repo's.
+[2020-10-22 04:34:32 CDT] - [ssh-keyphrase-only-once] Only type in your SSH keyphrase once per boot.
