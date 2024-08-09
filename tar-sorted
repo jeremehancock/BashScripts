@@ -23,8 +23,29 @@
 #############################################################################
 
 # Create tar archives sorted alphanumerically.
+
 function tar-sorted() {
+    local options="$@"
+    local archive="$2"
+    local zstd_flag=""
+
+    # Check for compression flag
+    if [[ "$options" == *"--zstd"* ]]; then
+        zstd_flag="--zstd"
+        echo "Options (before): $options"
+        options="${options/--zstd/}"
+        echo "Options (after): $options"
+
+        set -- $options
+    fi
+
+    # Only pass the remaining arguments (targets) to the find command
+    find "${@:3}" -print0 | sort -z | tar "$zstd_flag" "$1" "$2" --no-recursion --null -T -;
+}
+
+function tar-sorted-orig() {
     find "${@:3}" -print0 | sort -z | tar "$1" "$2" --no-recursion --null -T -;
 };
+
 
 tar-sorted "$@"
