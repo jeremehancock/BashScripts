@@ -14,6 +14,10 @@ Translations: [中文](README.cn.md), [हिन्दी](README.hi.md)
 Recent Changes
 ==============
 
+## v2.5.1 @ 2024-08-09
+* **[2024-03-17 05:21:56 CDT]** [btrfs-snapshot] Added support for hourly snapshots of /code.
+* **[2024-08-09 18:43:46 CDT]** [tar-sorted] Added support for --zstd archives.
+
 ## v2.5.0 @ 2024-01-19
 * **[2020-10-14]** [american-date] A utility to print out dates in the American format ('Fri, 19 January 2024 05:49:20 CST').
 * **[2024-01-15]** [tar-sorted] Create tar files automatically sorted by file name.
