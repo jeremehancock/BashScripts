@@ -75,6 +75,7 @@ Table of Contents (Categorized)
       * [clone-github-repos.php](#esotericclone-github-reposphp) - Downloads all of a user's/org's GitHub repositories.
    * **Bash Framework**
       * [is_root](#is_root) - Provides the `is_root` function for determining if the current user has root access.
+      * [wait_until_mouse_or_keyboard_event](#wait_until_mouse_or_keyboard_event) - Block execution until a key is pressed, the mouse is moved, or a mouse button is clicked.
    * [License](#license) - Creative Commons v4.0 International
    * [About The Author](#about-the-author)
 
@@ -380,6 +381,15 @@ Automagically downloads all of the GitHub repositories of a user or or an organi
 When run standalone, it will echo either "Running as root" or "Not running as root".
 
 When called as a function, it will return either `true` or `false`.
+
+## wait_until_mouse_or_keyboard_event
+
+Blocks the executing program until a key is pressed, the mouse is moved, or a mouse button
+is pressed, anywhere, irregardless of window focus.
+
+It will echo one of the following: KEYBOARD_KEY, MOUSE_CLICKED, or MOUSE_MOVED.
+
+Can be run either standalone or as a function.
 
 # License
 
