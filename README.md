@@ -73,6 +73,8 @@ Table of Contents (Categorized)
       * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) - 
       * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) - Remove duplicated Arch Linux Pacman entries.
       * [clone-github-repos.php](#esotericclone-github-reposphp) - Downloads all of a user's/org's GitHub repositories.
+   * **Bash Framework**
+      * [is_root](#is_root) - Provides the `is_root` function for determining if the current user has root access.
    * [License](#license) - Creative Commons v4.0 International
    * [About The Author](#about-the-author)
 
@@ -242,6 +244,13 @@ Takes BTRFS snapshots of / every hour on the hour.
 
 Cleans up the prior day's hourly snapshots while keeping the daily ones.
 
+## cron.hourly/php-clean-tmp
+
+Cleans up otherwise-useless PHP temp files, which is very useful on busy servers.
+* Old session files that haven't been modified in the last hour.
+* phpunit temp files.
+* phpstan temp files.
+
 ## american-date
 
 A utility to print out dates in the American format
@@ -272,7 +281,7 @@ Easily creates [CHANGELOGs](CHANGELOG.md) based upon concise git commit logs:
 
 Returns a list of files sorted by file size, descending, that are at least X MB big.
 
-## random-file [dir]
+## random-file
 
 Picks a random file in a directory / PWD.
 
@@ -322,6 +331,25 @@ Shallow updates a shallow `git clone --depth 1` repository.
 
 ## esoteric/init-btrfs-rootfs
 
+In Arch Linux, a btrfs setup puts every single file in /. This greatly limits
+the ability to properly manage the system, with subvol=5 having nothing but
+subvolumes.
+
+This script does the following:
+
+* Creates new root-level snapshots: `@rootfs` (/), `@snapshots`, `@important`, and `@home`.
+* Moves files `/` into `/@rootfs`, `/home` into `/home` and creates new `/snaps` and `/important`.
+* Creates `/media/true-root` that is auto-mounted to `/ (subvol=5)`.
+* Integrates with the `cron.d` auto-snapshot cronjobs in this project
+   * `/` is snapshotted daily in `/snaps/daily/YYYY-MM-DD.
+   * `/important` is snapshotted **hourly** in `/snaps/important/YYYY-MM-DD/HH`.
+   * `/important` is set for compression-enabled.
+   * Sets up `/home` to quota-enforced based on 10% of the total disk space per-user,
+     and 50% of the total disk space for every user.
+   * The `/home` snapshot is set for compression-enabled.
+   * The `/home` has rolling 7-day snapshotting for user's `.*` files, 
+     except for `cache` directories (when using [cron.daily/00_clear-cache]).
+
 ### The Problem
 
 Arch Linux sticks all of / in the main BTRFS subvolume (ID=5).
@@ -344,6 +372,14 @@ And for the love of God, make backups first!
 ## esoteric/clone-github-repos.php
 
 Automagically downloads all of the GitHub repositories of a user or or an organization.
+
+## Bash Framework
+
+### is_root
+
+When run standalone, it will echo either "Running as root" or "Not running as root".
+
+When called as a function, it will return either `true` or `false`.
 
 # License
 
