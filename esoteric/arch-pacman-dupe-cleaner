@@ -16,8 +16,13 @@
 # License: Creative Commons Attribution v4.0 International              #
 #########################################################################
 
+sudo echo EUID: $EUID
+
 # 0. Login as root.
-sudo -s
+if (($EUID != 0)); then
+  echo "Please run as root"
+  exit
+fi
 
 # 1. Remove the latest dupes from your Pacman DB.
 pacman -Syu 2>&1 | grep "duplicated database entry" > /tmp/dupes
