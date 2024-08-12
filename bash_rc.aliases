@@ -106,3 +106,8 @@ alias df='df -l -BM -Tx"squashfs"'
 
 # Make `watch` honor ~/.bashrc aliases.
 alias watch='watch '
+
+# Replace ssh with mosh, if it is installed.
+if command -v mosh >/dev/null 2>&1; then
+    alias ssh=mosh
+fi
