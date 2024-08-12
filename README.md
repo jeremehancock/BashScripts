@@ -38,6 +38,7 @@ Table of Contents (Categorized)
 ===============================
 
    * **Super Productivity**
+      * [bash_profile](#bash_profile) - High-quality `.bash_profile` and `.bashrc` for power users.
       * [bash_rc.aliases](#bash_rcaliases) - High-Octane .bashrc aliase and functions for a better Quality of Life.
       * [sudoers.d/00_prompt_once](#sudoersd00_prompt_once) - Only prompt for your sudo password once per boot.
       * [ssh-autologin](#ssh-autologin) - Automatically set up SSH autologins.
@@ -73,6 +74,10 @@ Table of Contents (Categorized)
       * [clone-github-repos.php](#esotericclone-github-reposphp) - Downloads all of a user's/org's GitHub repositories.
    * [License](#license) - Creative Commons v4.0 International
    * [About The Author](#about-the-author)
+
+## bash_profile
+
+Ties many of the BashScripts together for a super powerful system.
 
 ## bash_rc.aliases
 
