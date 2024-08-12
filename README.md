@@ -56,8 +56,9 @@ Table of Contents (Categorized)
       * [cron.hourly/btrfs-snapshot](#cronhourlybtrfs-snapshot) - Backup your BTRFS / hourly.
       * [cron.daily/btrfs-snapshot](#crondailybtrfs-snapshot) - Backup your BTRFS  / daily.
    * **Quality of Life**
-      * [ls-by-min ](#ls-by-min-) - Sorts the output of  `ls` by file size, descending.
-      * [random-file [dir]](#random-file-dir) -  Randomly picks a file or directory and displays it.
+      * [launch-browser](#launch-browser) - Browser launcher utility script that launches browsers in full-Wayland.
+      * [ls-by-min](#ls-by-min) - Sorts the output of  `ls` by file size, descending.
+      * [random-file](#random-file) - Randomly picks a file or directory and displays it.
       * [sync-watch](#sync-watch) - Outputs a tiny, updating display of how many MBs need to be written to disks.
       * [tar-sorted](#tar-sorted) - Create tar files automatically sorted by file name.
       * [turn-off-monitors](#turn-off-monitors) - Turns off all monitors via the Command Line (CLI). 
@@ -259,6 +260,13 @@ Easily creates [CHANGELOGs](CHANGELOG.md) based upon concise git commit logs:
     [2020-10-01 00:58:00 CDT] - [bash_rc.aliases] Added some more descriptions.
     [2020-10-01 01:10:26 CDT] - [.gitconfig] Added a whole bunch of my git aliases. tag: v1.0.0
     [2020-10-01 08:17:42 CDT] - [clear-cache] Delete broken symlinks in the ~/.cache directories.
+
+## launch-browser <browser-path>
+
+1. It detects if the user is running Wayland. If so, for Chromium-based browsers, it will pass 
+   the flags necessary for it to run in native-Wayland (not XWayland) for superior performance.
+2. It will always launch using the Gnome Keychain, so that you won't lose all of your cookies and
+   permanent logins every time you switch to KDE, and vice-versa.
 
 ## ls-by-min <MB>
 
