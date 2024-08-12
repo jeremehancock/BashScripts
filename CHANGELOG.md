@@ -32,12 +32,13 @@
 * **[2020-10-01 08:38:03 CDT]** - **[changelog-maker-lite]** Added a utility for making pretty CHANGELOGs.
 
 ### v2.0.0 @ 2020-10-22
-* **[2020-10-20 20:10:54 CDT]** - **[arch-pacman-dupe-cleaner]** Utility for resolving "error: duplicated database entry 'foo'"
+* **[2020-10-20 20:10:54 CDT]** - **[arch-pacman-dupe-cleaner]** Utility for resolving "error: duplicated database entry
+                                  'foo'"
 * **[2020-10-22 15:59:58 CDT]** - **[Major]** Relicensed to the Creative Commons Attribution v4.0 International License.
 * **[2020-10-22 01:01:01 CDT]** - **[git-mtime]** Restores the file modification times of your git workdir to the repo's.
 * **[2020-10-22 04:34:32 CDT]** - **[ssh-keyphrase-only-once]** Only type in your SSH keyphrase once per boot.
 * **[2020-10-22 16:22:09 CDT]** - **[turn-off-monitors]** Easily turn off all of your monitors via the CLI.
-* **[2020-10-22 18:36:34 CDT]** - Added a Table of Contents to the README. HEAD -> v2.0
+* **[2020-10-22 18:36:34 CDT]** - Added a Table of Contents to the README.
 
 Behavioral changes:
 * **[2020-10-22 14:53:09 CDT]** - **[changelog-maker-lite]** Now outputs Markdown lists.
@@ -45,11 +46,11 @@ Behavioral changes:
 ### v2.1.0 @ 2020-10-23
 * **[2020-10-23 12:31:25 CDT]** - **[m]** Refactored to use /usr/bin/env shebang.
 * **[2020-10-23 12:39:46 CDT]** - **[wifi-autorun-on-connect]** Autorun a script when you connect to a Wifi hotspot.
-* **[2020-10-23 18:40:30 CDT]** - Translated the README into Chinese and Hindi to support 3 Billion people. HEAD -> v2.1
+* **[2020-10-23 18:40:30 CDT]** - Translated the README into Chinese and Hindi to support 3 Billion people.
 
 ## v2.1.1 @ 2020-12-27
 * **[2020-12-26 17:00:11 CST]** - **[git-shallow-pull]** Added a utility to shallow update git.
-* **[2020-12-27 12:51:48 CST]** - **[git-change-author]** Easily bulk change the author's name and email in a git repo. HEAD -> v2.1 
+* **[2020-12-27 12:51:48 CST]** - **[git-change-author]** Easily bulk change the author's name and email in a git repo. 
 
 ## v2.2.0 @ 2021-06-04
 * **[2021-06-04 09:08:31 CDT]** - **[ssh-autologin]** Automatically set up SSH autologins.
@@ -63,13 +64,14 @@ Behavioral changes:
 * **[2024-01-13 13:55:42 CST]** Added a Bash alias to have `free` show the total memory in MiBs.
 * **[2024-01-13 13:56:25 CST]** Added a Bash alias `ps-date` to show the full date timestamp of a long-running process.
 * **[2024-01-13 13:56:54 CST]** Added a Bash alias to hide all of the snap /dev/loop devices from df.
-* **[2024-01-13 13:59:23 CST]** [changelog-maker-lite] Bold the timestamps. HEAD -> trunk
+* **[2024-01-13 13:59:23 CST]** [changelog-maker-lite] Bold the timestamps.
 
 ## v2.4.1 @ 2024-01-14
 * **[2024-01-14 22:31:40 CST]** [arch-pacman-dupe-cleaner] Fixed the script for modern Arch.
 
 ## v2.5.0 @ 2024-01-19
-* **[2020-10-14 15:53:34 CST]** [american-date] A utility to print out dates in the American format ('Fri, 19 January 2024 05:49:20 CST').
+* **[2020-10-14 15:53:34 CST]** [american-date] A utility to print out dates in the American format 
+                                ('Fri, 19 January 2024 05:49:20 CST').
 * **[2024-01-15 09:14:17 CST]** [tar-sorted] Create tar files automatically sorted by file name.
 * **[2023-11-17 11:22:42 CST]** [git-commit-at-modded-time] Use a file's modified time as the git time.
 * **[2024-01-19 06:17:20 CST]** [git-same-sig-time] Unifies the GPG signature time with the commit's time.
@@ -77,3 +79,17 @@ Behavioral changes:
 ## v2.5.1 @ 2024-08-09
 * **[2024-03-17 05:21:56 CDT]** [btrfs-snapshot] Added support for hourly snapshots of /code.
 * **[2024-08-09 18:43:46 CDT]** [tar-sorted] Added support for --zstd archives.
+
+## v2.6.0 @ 2024-08-12
+
+* **[2024-08-12 02:06:41 CDT]** Added a .bash_profile.
+* **[2024-08-12 02:09:39 CDT]** [launch-browser] Launch Chrome-based browsers in native Wayland.
+* **[2024-08-12 02:35:43 CDT]** [framework/is_root] Added a function for determining root access.
+* **[2024-08-12 03:16:29 CDT]** [framework/wait_until_mouse_or_keyboard_event] Block execution until a key is pressed, 
+                                the mouse is moved, or a mouse button is clicked.
+* **[2024-08-12 03:22:17 CDT]** [bash_rc.aliases] Added an alias to make `watch` honor ~/.bashrc aliases.
+* **[2024-08-12 03:22:50 CDT]** [bash_rc.aliases] Replace ssh with mosh, if it is installed.
+* **[2024-08-12 03:29:03 CDT]** [gitconfig] Automatically time out git when websites are not reachable.
+* **[2024-08-12 03:38:25 CDT]** [arch-pacman-dupe-cleaner] Require superuser to run.
+* **[2024-08-12 03:41:30 CDT]** [turn-off-monitors] A CLI script for turning off monitors in Wayland for Gnome and KDE.
+* **[2024-08-12 06:08:57 CDT]** Majorly cleaned up the README and translated to Chinese, Hindi, and Spanish.

@@ -14,24 +14,31 @@ Translations: [中文](README.cn.md), [हिन्दी](README.hi.md)
 Recent Changes
 ==============
 
+#### v2.6.0 @ 2024-08-12
+
+* **[2024-08-12]** Majorly cleaned up the README and translated to Chinese, Hindi, and Spanissh.
+* **[2024-08-12]** [turn-off-monitors] Added full support for turning off monitors in Wayland for Gnome and KDE.
+* **[2024-08-12]** [arch-pacman-dupe-cleaner] Require superuser to run.
+* **[2024-08-12]** [gitconfig] Automatically time out git when websites are not reachable.
+* **[2024-08-12]** [bash_rc.aliases] Replace ssh with mosh, if it is installed.
+* **[2024-08-12]** [bash_rc.aliases] Added an alias to make `watch` honor ~/.bashrc aliases.
+* **[2024-08-12]** [framework/wait_until_mouse_or_keyboard_event] Block execution until a key is pressed, 
+                   the mouse is moved, or a mouse button is clicked.
+* **[2024-08-12]** [framework/is_root] Added a function for determining root access.
+* **[2024-08-12]** [launch-browser] Launch Chrome-based browsers in native Wayland.
+* **[2024-08-12]** Added a .bash_profile.
+
 #### v2.5.1 @ 2024-08-09
 * **[2024-03-17]** [btrfs-snapshot] Added support for hourly snapshots of /code.
 * **[2024-08-09]** [tar-sorted] Added support for --zstd archives. 
 
 #### v2.5.0 @ 2024-01-19
-* **[2020-10-14]** [american-date] A utility to print out dates in the American format ('Fri, 19 January 2024 05:49:20 CST').
+* **[2020-10-14]** [american-date] A utility to print out dates in the American format 
+                   ('Fri, 19 January 2024 05:49:20 CST').
 * **[2024-01-15]** [tar-sorted] Create tar files automatically sorted by file name.
 * **[2023-11-17]** [git-commit-at-modded-time] Use a file's modified time as the git time.
 * **[2024-01-19]** [git-same-sig-time] Unifies the GPG signature time with the commit's time.
 
-#### v2.4.1 @ 2024-01-14
-* **[2024-01-14]** [arch-pacman-dupe-cleaner] Fixed the script for modern Arch.
-
-#### v2.4.0 @ 2024-01-13
-* **[2024-01-13]** Added a Bash alias to have `free` show the total memory in MiBs.
-* **[2024-01-13]** Added a Bash alias `ps-date` to show the full date timestamp of a long-running process.
-* **[2024-01-13]** Added a Bash alias to hide all of the snap /dev/loop devices from df.
-* **[2024-01-13]** [changelog-maker-lite] Bold the timestamps. HEAD -> trunk
 
 
 Table of Contents (Categorized)

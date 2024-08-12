@@ -12,6 +12,19 @@ Están ordenados por cuánta utilidad me brindan.
 Cambios Recientes
 =================
 
+#### v2.6.0 @ 2024-08-12
+
+* **[2024-08-12]** Se limpió mayormente el README y se tradujo al chino, hindi y español.
+* **[2024-08-12]** [turn-off-monitors] Se agregó soporte completo para apagar monitores en Wayland para Gnome y KDE.
+* **[2024-08-12]** [arch-pacman-dupe-cleaner] Requiere superusuario para ejecutarse.
+* **[2024-08-12]** [gitconfig] Tiempo de espera automático para git cuando los sitios web no son accesibles.
+* **[2024-08-12]** [bash_rc.aliases] Reemplaza ssh con mosh, si está instalado.
+* **[2024-08-12]** [bash_rc.aliases] Se añadió un alias para que `watch` respete los alias de ~/.bashrc.
+* **[2024-08-12]** [framework/wait_until_mouse_or_keyboard_event] Bloquea la ejecución hasta que se presione una tecla, se mueva el ratón o se haga clic en un botón del ratón.
+* **[2024-08-12]** [framework/is_root] Se agregó una función para determinar el acceso root.
+* **[2024-08-12]** [launch-browser] Lanza navegadores basados en Chrome en Wayland nativo.
+* **[2024-08-12]** Se añadió un .bash_profile.
+
 #### v2.5.1 @ 2024-08-09
 * **[2024-03-17]** [btrfs-snapshot] Se agregó soporte para snapshots por hora de /code.
 * **[2024-08-09]** [tar-sorted] Se agregó soporte para archivos –zstd.

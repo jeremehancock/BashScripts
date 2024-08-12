@@ -21,6 +21,19 @@ Here is the translation of the document into Simplified Chinese:
 最近更改
 ==========
 
+#### v2.6.0 @ 2024-08-12
+
+* **[2024-08-12]** 大幅清理了 README 并翻译成中文、印地语和西班牙语。
+* **[2024-08-12]** [turn-off-monitors] 增加了在 Wayland 下关闭 Gnome 和 KDE 显示器的完整支持。
+* **[2024-08-12]** [arch-pacman-dupe-cleaner] 需要超级用户权限运行。
+* **[2024-08-12]** [gitconfig] 在无法访问网站时自动超时 git。
+* **[2024-08-12]** [bash_rc.aliases] 如果安装了 mosh，则替换 ssh。
+* **[2024-08-12]** [bash_rc.aliases] 添加了一个别名，使 `watch` 尊重 ~/.bashrc 别名。
+* **[2024-08-12]** [framework/wait_until_mouse_or_keyboard_event] 阻止执行直到按下键盘键、移动鼠标或点击鼠标按钮。
+* **[2024-08-12]** [framework/is_root] 增加了一个确定是否为 root 访问的函数。
+* **[2024-08-12]** [launch-browser] 在本地 Wayland 启动基于 Chrome 的浏览器。
+* **[2024-08-12]** 添加了 .bash_profile。
+
 #### v2.5.1 @ 2024-08-09
 * **[2024-03-17]** [btrfs-snapshot] 增加了对 /code 进行每小时快照的支持。
 * **[2024-08-09]** [tar-sorted] 增加了对 –zstd 文件的支持。
