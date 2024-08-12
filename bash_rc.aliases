@@ -103,3 +103,6 @@ alias ps-date='ps -eo pid,lstart,cmd'
 
 # Hide all of the /dev/loop snap devices from df:
 alias df='df -l -BM -Tx"squashfs"'
+
+# Make `watch` honor ~/.bashrc aliases.
+alias watch='watch '
