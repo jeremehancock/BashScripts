@@ -12,6 +12,10 @@ Están ordenados por cuánta utilidad me brindan.
 Cambios Recientes
 =================
 
+#### v2.6.1 @ 2024-08-24
+
+* **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Se agregó soporte adecuado para zonas horarias diferentes a la de la computadora del usuario.
+
 #### v2.6.0 @ 2024-08-12
 
 * **[2024-08-12]** Se limpió mayormente el README y se tradujo al chino, hindi y español.

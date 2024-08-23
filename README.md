@@ -14,6 +14,10 @@ Translations: [中文](README.cn.md), [हिन्दी](README.hi.md)
 Recent Changes
 ==============
 
+#### v2.6.1 @ 2024-08-24
+
+* **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Added proper support for time zones different than the user's computer.
+
 #### v2.6.0 @ 2024-08-12
 
 * **[2024-08-12]** Majorly cleaned up the README and translated to Chinese, Hindi, and Spanissh.

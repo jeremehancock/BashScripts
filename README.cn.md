@@ -21,6 +21,10 @@ Here is the translation of the document into Simplified Chinese:
 最近更改
 ==========
 
+#### v2.6.1 @ 2024-08-24
+
+* **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] 增加了对不同于用户计算机时区的正确支持。
+
 #### v2.6.0 @ 2024-08-12
 
 * **[2024-08-12]** 大幅清理了 README 并翻译成中文、印地语和西班牙语。

@@ -93,3 +93,7 @@ Behavioral changes:
 * **[2024-08-12 03:38:25 CDT]** [arch-pacman-dupe-cleaner] Require superuser to run.
 * **[2024-08-12 03:41:30 CDT]** [turn-off-monitors] A CLI script for turning off monitors in Wayland for Gnome and KDE.
 * **[2024-08-12 06:08:57 CDT]** Majorly cleaned up the README and translated to Chinese, Hindi, and Spanish.
+
+## v2.6.1 @ 2024-08-23
+
+* **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Added proper support for time zones different than the user's computer.
