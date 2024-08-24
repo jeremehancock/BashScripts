@@ -16,6 +16,8 @@ Recent Changes
 
 #### v2.7.0 @ 2024-08-24
 
+* **[2024-08-24 12:06:32 CDT]** [bash-timer] Added the bash-timer project.
+
 #### v2.6.1 @ 2024-08-23
 
 * **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Added proper support for time zones different than the user's computer.
@@ -33,18 +35,6 @@ Recent Changes
 * **[2024-08-12]** [framework/is_root] Added a function for determining root access.
 * **[2024-08-12]** [launch-browser] Launch Chrome-based browsers in native Wayland.
 * **[2024-08-12]** Added a .bash_profile.
-
-#### v2.5.1 @ 2024-08-09
-* **[2024-03-17]** [btrfs-snapshot] Added support for hourly snapshots of /code.
-* **[2024-08-09]** [tar-sorted] Added support for --zstd archives. 
-
-#### v2.5.0 @ 2024-01-19
-* **[2020-10-14]** [american-date] A utility to print out dates in the American format 
-                   ('Fri, 19 January 2024 05:49:20 CST').
-* **[2024-01-15]** [tar-sorted] Create tar files automatically sorted by file name.
-* **[2023-11-17]** [git-commit-at-modded-time] Use a file's modified time as the git time.
-* **[2024-01-19]** [git-same-sig-time] Unifies the GPG signature time with the commit's time.
-
 
 
 Table of Contents (Categorized)

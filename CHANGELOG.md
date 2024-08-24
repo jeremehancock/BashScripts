@@ -97,3 +97,7 @@ Behavioral changes:
 ## v2.6.1 @ 2024-08-23
 
 * **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Added proper support for time zones different than the user's computer.
+
+## v2.7.0 @ 2024-08-24
+
+* **[2024-08-24 12:06:32 CDT]** [bash-timer] Added the bash-timer project.

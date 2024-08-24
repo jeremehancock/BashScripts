@@ -12,6 +12,10 @@ Están ordenados por cuánta utilidad me brindan.
 Cambios Recientes
 =================
 
+#### v2.7.0 @ 2024-08-24
+
+* **[2024-08-24 12:06:32 CDT]** [bash-timer] Se agregó el proyecto bash-timer.
+
 #### v2.6.1 @ 2024-08-24
 
 * **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] Se agregó soporte adecuado para zonas horarias diferentes a la de la computadora del usuario.
@@ -28,17 +32,6 @@ Cambios Recientes
 * **[2024-08-12]** [framework/is_root] Se agregó una función para determinar el acceso root.
 * **[2024-08-12]** [launch-browser] Lanza navegadores basados en Chrome en Wayland nativo.
 * **[2024-08-12]** Se añadió un .bash_profile.
-
-#### v2.5.1 @ 2024-08-09
-* **[2024-03-17]** [btrfs-snapshot] Se agregó soporte para snapshots por hora de /code.
-* **[2024-08-09]** [tar-sorted] Se agregó soporte para archivos –zstd.
-
-#### v2.5.0 @ 2024-01-19
-* **[2020-10-14]** [american-date] Una utilidad para imprimir fechas en el formato americano ('Fri, 19 January 2024 
-05:49:20 CST').
-* **[2024-01-15]** [tar-sorted] Crea archivos tar automáticamente ordenados por nombre de archivo.
-* **[2023-11-17]** [git-commit-at-modded-time] Usa el tiempo modificado de un archivo como el tiempo de git.
-* **[2024-01-19]** [git-same-sig-time] Unifica el tiempo de la firma GPG con el tiempo del commit.
 
 Tabla de Contenidos (Categorizada)
 ===============================

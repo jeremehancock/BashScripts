@@ -21,6 +21,10 @@ Here is the translation of the document into Simplified Chinese:
 最近更改
 ==========
 
+#### v2.7.0 @ 2024-08-24
+
+* **[2024-08-24 12:06:32 CDT]** [bash-timer] 添加了 bash-timer 项目。
+
 #### v2.6.1 @ 2024-08-24
 
 * **[2024-08-23 07:09:10 CDT]** [git-same-sig-time] 增加了对不同于用户计算机时区的正确支持。
@@ -37,16 +41,6 @@ Here is the translation of the document into Simplified Chinese:
 * **[2024-08-12]** [framework/is_root] 增加了一个确定是否为 root 访问的函数。
 * **[2024-08-12]** [launch-browser] 在本地 Wayland 启动基于 Chrome 的浏览器。
 * **[2024-08-12]** 添加了 .bash_profile。
-
-#### v2.5.1 @ 2024-08-09
-* **[2024-03-17]** [btrfs-snapshot] 增加了对 /code 进行每小时快照的支持。
-* **[2024-08-09]** [tar-sorted] 增加了对 –zstd 文件的支持。
-
-#### v2.5.0 @ 2024-01-19
-* **[2020-10-14]** [american-date] 一个用于以美国格式 ('Fri, 19 January 2024 05:49:20 CST') 打印日期的工具。
-* **[2024-01-15]** [tar-sorted] 自动按文件名排序创建 tar 文件。
-* **[2023-11-17]** [git-commit-at-modded-time] 使用文件修改时间作为 git 提交时间。
-* **[2024-01-19]** [git-same-sig-time] 统一 GPG 签名时间与提交时间。
 
 目录（分类）
 ====================
