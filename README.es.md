@@ -44,60 +44,61 @@ Tabla de Contenidos (Categorizada)
 ===============================
 
 * **Super Productividad**
-    * [bash_profile](#bash_profile) - `.bash_profile` y `.bashrc` de alta calidad para usuarios avanzados.
-    * [bash_rc.aliases](#bash_rcaliases) - Alias y funciones de .bashrc de alto octanaje para una mejor calidad de 
+    * [bash_profile](#bash_profile) — `.bash_profile` y `.bashrc` de alta calidad para usuarios avanzados.
+    * [bash_rc.aliases](#bash_rcaliases) — Alias y funciones de .bashrc de alto octanaje para una mejor calidad de 
       vida.
-    * [sudoers.d/00_prompt_once](#sudoersd00_prompt_once) - Solo solicita tu contraseña de sudo una vez por arranque.
-    * [ssh-autologin](#ssh-autologin) - Configura automáticamente los autologins de SSH.
-    * [ssh-keyphrase-only-once](#ssh-keyphrase-only-onceinstaller) - Solo solicita tu frase de contraseña de SSH una 
+    * [bash-timer](#bash-timer) — ¡Agregue fácilmente el tiempo de ejecución legible para humanos para cada comando en bash!
+    * [ssh-autologin](#ssh-autologin) — Configura automáticamente los autologins de SSH.
+    * [ssh-keyphrase-only-once](#ssh-keyphrase-only-onceinstaller) — Solo solicita tu frase de contraseña de SSH una 
       vez por arranque.
-    * [gitconfig](#gitconfig) - Configuración de Git CLI de alto octanaje.
+    * [gitconfig](#gitconfig) — Configuración de Git CLI de alto octanaje.
 * **Calidad de Vida de Git**
-    * [git-change-author](#git-change-author) - Cambia fácilmente el nombre y el correo electrónico del autor en masa 
+    * [git-change-author](#git-change-author) — Cambia fácilmente el nombre y el correo electrónico del autor en masa 
       en un repositorio git.
-    * [git-commit-at-modded-time](#git-commit-at-modded-time) - Usa el tiempo modificado de un archivo como el tiempo 
+    * [git-commit-at-modded-time](#git-commit-at-modded-time) — Usa el tiempo modificado de un archivo como el tiempo 
       de git.
-    * [git-mtime](#git-mtime-git-modified-time-restorer) - Restaura el tiempo de modificación de cada archivo al del 
+    * [git-mtime](#git-mtime-git-modified-time-restorer) — Restaura el tiempo de modificación de cada archivo al del 
       historial del repositorio.
-    * [git-same-sig-time](#git-same-sig-time) - Unifica el tiempo de la firma GPG con el tiempo del commit.
-    * [git-shallow-pull](#esotericgit-shallow-pull) - Actualiza superficialmente un repositorio `git clone --depth 1` 
+    * [git-same-sig-time](#git-same-sig-time) — Unifica el tiempo de la firma GPG con el tiempo del commit.
+    * [git-shallow-pull](#esotericgit-shallow-pull) — Actualiza superficialmente un repositorio `git clone --depth 1` 
       poco profundo.
 * **CronTabs**
-    * [cron.daily/00_clear-cache](#crondaily00_clear-cache) - Elimina archivos de caché inútiles cada noche.
-    * [cron.daily/01_purge-locales](#crondaily01_purge-locales) - Elimina locales internacionales sin valor.
-    * [cron.hourly/btrfs-snapshot](#cronhourlybtrfs-snapshot) - Respalda tu BTRFS / cada hora.
-    * [cron.daily/btrfs-snapshot](#crondailybtrfs-snapshot) - Respalda tu BTRFS / diariamente.
-    * [cron.hourly/php-clean-tmp](#cronhourlyphp-clean-tmp) - Limpia archivos temporales de PHP en servidores ocupados.
+    * [cron.daily/00_clear-cache](#crondaily00_clear-cache) — Elimina archivos de caché inútiles cada noche.
+    * [cron.daily/01_purge-locales](#crondaily01_purge-locales) — Elimina locales internacionales sin valor.
+    * [cron.hourly/btrfs-snapshot](#cronhourlybtrfs-snapshot) — Respalda tu BTRFS / cada hora.
+    * [cron.daily/btrfs-snapshot](#crondailybtrfs-snapshot) — Respalda tu BTRFS / diariamente.
+    * [cron.hourly/php-clean-tmp](#cronhourlyphp-clean-tmp) — Limpia archivos temporales de PHP en servidores ocupados.
 * **Calidad de Vida**
-    * [launch-browser](#launch-browser) - Script de utilidad para lanzar navegadores que los inicia en modo Wayland 
+    * [launch-browser](#launch-browser) — Script de utilidad para lanzar navegadores que los inicia en modo Wayland 
       completo.
-    * [ls-by-min](#ls-by-min) - Ordena la salida de `ls` por tamaño de archivo, descendente.
-    * [random-file](#random-file) - Elige aleatoriamente un archivo o directorio y lo muestra.
-    * [sync-watch](#sync-watch) - Muestra una pequeña pantalla actualizada de cuántos MB necesitan escribirse en los 
+    * [ls-by-min](#ls-by-min) — Ordena la salida de `ls` por tamaño de archivo, descendente.
+    * [random-file](#random-file) — Elige aleatoriamente un archivo o directorio y lo muestra.
+    * [sync-watch](#sync-watch) — Muestra una pequeña pantalla actualizada de cuántos MB necesitan escribirse en los 
       discos.
-    * [tar-sorted](#tar-sorted) - Crea archivos tar automáticamente ordenados por nombre de archivo.
-    * [turn-off-monitors](#turn-off-monitors) - Apaga todos los monitores a través de la línea de comandos (CLI).
+    * [tar-sorted](#tar-sorted) — Crea archivos tar automáticamente ordenados por nombre de archivo.
+    * [turn-off-monitors](#turn-off-monitors) — Apaga todos los monitores a través de la línea de comandos (CLI).
 * **Scripts Fantásticos**
-    * [american-date](#american-date) - Una utilidad para imprimir fechas en formato americano.
-    * [changelog-maker-lite](#changelog-maker-lite) - Crea rápidamente un hermoso registro de cambios a partir del 
+    * [american-date](#american-date) — Una utilidad para imprimir fechas en formato americano.
+    * [changelog-maker-lite](#changelog-maker-lite) — Crea rápidamente un hermoso registro de cambios a partir del 
       historial de commits.
-    * [stream-to-youtube](#stream-to-youtube) - Transmisión en vivo directamente a YouTube desde la línea de comandos.
-    * [watermark.sh](#watermarksh) - Incrusta fácilmente tu propia marca de agua en videos.
-    * [wifi-autorun-on-connect](#wifi-autorun-on-connectinstaller) - Ejecuta automáticamente un script al conectarte a 
+    * [stream-to-youtube](#stream-to-youtube) — Transmisión en vivo directamente a YouTube desde la línea de comandos.
+    * [sudoers.d/00_prompt_once](#sudoersd00_prompt_once) — Solo solicita tu contraseña de sudo una vez por arranque.
+    * [watermark.sh](#watermarksh) — Incrusta fácilmente tu propia marca de agua en videos.
+    * [wifi-autorun-on-connect](#wifi-autorun-on-connectinstaller) — Ejecuta automáticamente un script al conectarte a 
       un punto de acceso Wifi.
-    * [x265.sh](#x265sh) - Transcodifica a h265 HEVC a través de la tarjeta gráfica Intel usando VAAPI.
+    * [x265.sh](#x265sh) — Transcodifica a h265 HEVC a través de la tarjeta gráfica Intel usando VAAPI.
 * **Utilidades Esotéricas**
-    * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) - Elimina entradas duplicadas de Arch Linux Pacman.
-    * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) - Pone todo en subvolúmenes BTRFS organizados + activa las 
+    * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) — Elimina entradas duplicadas de Arch Linux Pacman.
+    * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) — Pone todo en subvolúmenes BTRFS organizados + activa las 
       instantáneas.
-    * [clone-github-repos.php](#esotericclone-github-reposphp) - Descarga todos los repositorios de GitHub de un 
+    * [clone-github-repos.php](#esotericclone-github-reposphp) — Descarga todos los repositorios de GitHub de un 
       usuario/organización.
 * **Framework de Bash**
-    * [is_root](#is_root) - Proporciona la función `is_root` para determinar si el usuario actual tiene acceso root.
-    * [wait_until_mouse_or_keyboard_event](#wait_until_mouse_or_keyboard_event) - Bloquea la ejecución hasta que se 
+    * [is_root](#is_root) — Proporciona la función `is_root` para determinar si el usuario actual tiene acceso root.
+    * [wait_until_mouse_or_keyboard_event](#wait_until_mouse_or_keyboard_event) — Bloquea la ejecución hasta que se 
       presiona una tecla, se mueve el mouse o se hace clic en un botón del mouse.
 
-* [Licencia](#license) - Creative Commons v4.0 Internacional
+* [Licencia](#license) — Creative Commons v4.0 Internacional
 * [Acerca del Autor](#about-the-author)
 
 ## bash_profile
@@ -113,10 +114,24 @@ eficiente y optimizado.
 
 ¡Ve a revisar el archivo! [bash_rc.aliases](bash_rc.aliases)
 
-## sudoers.d/00_prompt_once
+## bash-timer
 
-Esto hará que `sudo` solo te pida la contraseña UNA VEZ durante un solo arranque. No te pedirá a través de diferentes 
-terminales y no expirará. Al reiniciar, expirará automáticamente.
+¡Agregue fácilmente el tiempo de ejecución legible para humanos para cada comando en bash!
+
+El tiempo aparecerá en la parte inferior izquierda, inmediatamente a la izquierda de su $PS1.
+
+![bash-timer image](https://user-images.githubusercontent.com/1125541/93687425-7c392100-fa83-11ea-9d36-cacbe03cc725.png)
+```
+2 days 05:02:11.33 # A very long process
+```
+
+**Para instalar:**
+
+```bash
+curl https://raw.githubusercontent.com/hopeseekr/bash-timer/v1.5.0/install | bash
+```
+
+[**Ver el README.md**](bash-timer/README.md) para más información.
 
 ## ssh-autologin
 
@@ -284,14 +299,14 @@ Una utilidad para imprimir fechas en el formato americano
 
 Crea fácilmente [CHANGELOGs](CHANGELOG.md) basados en registros de commits de git concisos:
 
-    [2020-10-01 00:23:15 CDT] - [x265.sh] Use VAAPI for encoding using Intel graphics cards.
-    [2020-10-01 00:30:00 CDT] - Created a README.md.
-    [2020-10-01 00:37:07 CDT] - [random-file] renamed for more clarity.
-    [2020-10-01 00:44:34 CDT] - Flushed out the README.
-    [2020-10-01 00:49:44 CDT] - [bash_rc.aliases] Added a whole slew of webdev aliases.
-    [2020-10-01 00:58:00 CDT] - [bash_rc.aliases] Added some more descriptions.
-    [2020-10-01 01:10:26 CDT] - [.gitconfig] Added a whole bunch of my git aliases. tag: v1.0.0
-    [2020-10-01 08:17:42 CDT] - [clear-cache] Delete broken symlinks in the ~/.cache directories.
+    [2020-10-01 00:23:15 CDT] — [x265.sh] Use VAAPI for encoding using Intel graphics cards.
+    [2020-10-01 00:30:00 CDT] — Created a README.md.
+    [2020-10-01 00:37:07 CDT] — [random-file] renamed for more clarity.
+    [2020-10-01 00:44:34 CDT] — Flushed out the README.
+    [2020-10-01 00:49:44 CDT] — [bash_rc.aliases] Added a whole slew of webdev aliases.
+    [2020-10-01 00:58:00 CDT] — [bash_rc.aliases] Added some more descriptions.
+    [2020-10-01 01:10:26 CDT] — [.gitconfig] Added a whole bunch of my git aliases. tag: v1.0.0
+    [2020-10-01 08:17:42 CDT] — [clear-cache] Delete broken symlinks in the ~/.cache directories.
 
 ## launch-browser <browser-path>
 
@@ -312,6 +327,11 @@ Elige un archivo aleatorio en un directorio / directorio de trabajo actual (PWD)
 ## stream-to-youtube
 
 ¡Transmisor de pantalla en vivo de YouTube directamente desde la línea de comandos (a través de ffmpeg)!
+
+## sudoers.d/00_prompt_once
+
+Esto hará que `sudo` solo te pida la contraseña UNA VEZ durante un solo arranque. No te pedirá a través de diferentes 
+terminales y no expirará. Al reiniciar, expirará automáticamente.
 
 ## sync-watch
 
