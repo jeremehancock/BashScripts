@@ -23,6 +23,14 @@ else
   RESET="\[\033[0m\]"
 fi
 
+pad_number() {
+  number="$1"
+  while [ ${#number} -lt 3 ]; do
+    number="0${number}"
+  done
+  echo "$number"
+}
+
 human_time()
 {
   local msg
@@ -48,14 +56,15 @@ human_time()
     printf "%1d:%02d" $min $s
     return
   fi
-
-  echo $s
 }
 
 bashtimer_preexec() {
   # Thanks to /u/OneTurnMore
   # https://www.reddit.com/r/bash/comments/ivz276/tired_of_typing_time_all_the_time_try_bashtimer/g5wui2l/
   if [ ! -z "$EPOCHREALTIME" ]; then
+    # Replace "," decimal separator with ".". This is needed for European locales, among others.
+    EPOCHREALTIME="${EPOCHREALTIME/,/.}"
+
     begin_s=${EPOCHREALTIME%.*}
     begin_ns=${EPOCHREALTIME#*.}
     begin_ns="${begin_ns#0}"
@@ -75,27 +84,31 @@ bashtimer_precmd() {
     # Thanks to /u/OneTurnMore
     # https://www.reddit.com/r/bash/comments/ivz276/tired_of_typing_time_all_the_time_try_bashtimer/g5wui2l/
     if [ ! -z "$EPOCHREALTIME" ]; then
+      # Replace "," decimal separator with ".". This is needed for European locales, among others.
+      EPOCHREALTIME="${EPOCHREALTIME/,/.}"
+
       end_s=${EPOCHREALTIME%.*}
+      # echo "Begin Seconds: $begin_s | End Seconds: $end_s"
       end_ns=${EPOCHREALTIME#*.}
       end_ns="${end_ns#0}"
 
+      if [ $end_ns -lt $begin_ns ]; then
+        end_ns=$((1000000 + $end_ns))
+        end_s=$(($end_s - 1))
+      fi
       # Convert strings with leading zeros to base 10 integers
       begin_ns=$((10#$begin_ns))
       end_ns=$((10#$end_ns))
 
       s=$((end_s - begin_s))
       if [ "$end_ns" -ge "$begin_ns" ]; then
-        ms=$(( (1000000 + end_ns - begin_ns) / 1000 ))
+        ms=$(( (end_ns - begin_ns) / 1000 ))
       else
-        ms=$(( (1000000 + end_ns - begin_ns) / -1000 ))
+        ms=$((((1000000 + end_ns) - begin_ns) / 1000))
       fi
 
-      # Ensure `ms` is always handled as an integer, stripping any leading zeroes internally:
-      ms=$((10#$ms))
-
       # Ensure ms is always three digits for consistency in output:
-      ms=$(( ms + 1000 ))
-      ms="${ms:1}"
+      ms=$(pad_number "$ms")
     else
       # For Bash < v5.0
       read end_s end_ns <<< $(date +"%s %N")
