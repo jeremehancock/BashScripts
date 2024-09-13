@@ -13,6 +13,13 @@ Translations: [中文](README.cn.md), [हिन्दी](README.hi.md)
 
 Recent Changes
 ==============
+#### v2.7.1 @ 2024-09-13
+
+* **[2024-08-29 07:49:02 CDT]** [bash-timer] Added support for locales with the comma decimal separator.
+* **[2024-09-01 12:31:33 CDT]** [bash-timer] Properly pad ms to 3 digits.
+* **[2024-09-01 12:41:07 CDT]** [bash-timer] Greatly refactored ns math to properly calculate seconds and ms.
+* **[2024-09-10 02:20:14 CDT]** [bash-timer] Fixed the "value too great" error.
+* **[2024-09-11 02:22:12 CDT]** [bash-timer] Supported non-decimal locales, properly in Bash v5.
 
 #### v2.7.0 @ 2024-08-24
 
