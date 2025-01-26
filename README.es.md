@@ -70,6 +70,7 @@ Tabla de Contenidos (Categorizada)
       discos.
     * [tar-sorted](#tar-sorted) — Crea archivos tar automáticamente ordenados por nombre de archivo.
     * [turn-off-monitors](#turn-off-monitors) — Apaga todos los monitores a través de la línea de comandos (CLI).
+    * [wifi-show-password](#wifi-show-password) — Muestra la contraseña wifi conectada actualmente.
 * **Scripts Fantásticos**
     * [american-date](#american-date) — Una utilidad para imprimir fechas en formato americano.
     * [changelog-maker-lite](#changelog-maker-lite) — Crea rápidamente un hermoso registro de cambios a partir del 
@@ -342,13 +343,17 @@ Apaga fácilmente todos tus monitores a través de la línea de comandos.
 
 Para cuando quieres alejarte y no preocuparte tanto por una pantalla de bloqueo.
 
+## watermark.sh
+
+Agrega una marca de agua a videos a través de ffmpeg.
+
 ## wifi-autorun-on-connect.installer
 
 Instala un script de NetworkManager que se ejecuta automáticamente cuando se conecta a redes WiFi específicas.
 
-## watermark.sh
+## wifi-show-password
 
-Agrega una marca de agua a videos a través de ffmpeg.
+Muestra la contraseña wifi conectada actualmente.
 
 ## x265.sh
 

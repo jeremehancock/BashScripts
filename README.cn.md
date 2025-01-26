@@ -71,6 +71,7 @@ Here is the translation of the document into Simplified Chinese:
     * [sync-watch](#sync-watch) — 显示需要写入磁盘的 MB 数量的更新屏幕。
     * [tar-sorted](#tar-sorted) — 自动按文件名排序创建 tar 文件。
     * [turn-off-monitors](#turn-off-monitors) — 通过命令行关闭所有显示器（CLI）。
+    * [wifi-show-password](#wifi-show-password) — 显示当前连接的wifi密码。
 * **精彩脚本**
     * [american-date](#american-date) — 一个用于打印美国日期格式的工具。
     * [changelog-maker-lite](#changelog-maker-lite) — 根据提交历史快速创建美观的变更日志。
@@ -329,13 +330,17 @@ git alterego 的反义词。
 
 当你想要离开并不那么担心锁屏时使用。
 
+## watermark.sh
+
+通过 ffmpeg 为视频添加水印。
+
 ## wifi-autorun-on-connect.installer
 
 安装一个 NetworkManager 脚本，在连接到特定 WiFi 网络时自动运行。
 
-## watermark.sh
+## wifi-show-password
 
-通过 ffmpeg 为视频添加水印。
+显示当前连接的wifi密码。
 
 ## x265.sh
 

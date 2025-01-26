@@ -13,6 +13,10 @@ Translations: [中文](README.cn.md), [हिन्दी](README.hi.md)
 
 Recent Changes
 ==============
+#### v2.7.2 @ 2025-01-27
+
+* **[2025-01-25 19:18:27 CST]** [wifi-show-password] Added a utility to show the current wifi password. 
+
 #### v2.7.1 @ 2024-09-13
 
 * **[2024-08-29 07:49:02 CDT]** [bash-timer] Added support for locales with the comma decimal separator.
@@ -73,7 +77,8 @@ Table of Contents (Categorized)
     * [sudoers.d/00_prompt_once](#sudoersd00_prompt_once) — Only prompt for your sudo password once per boot.
     * [sync-watch](#sync-watch) — Outputs a tiny, updating display of how many MBs need to be written to disks.
     * [tar-sorted](#tar-sorted) — Create tar files automatically sorted by file name.
-    * [turn-off-monitors](#turn-off-monitors) — Turns off all monitors via the Command Line (CLI). 
+    * [turn-off-monitors](#turn-off-monitors) — Turns off all monitors via the Command Line (CLI).
+    * [wifi-show-password](#wifi-show-password) — Shows the currently connected wifi password.
 * **Uber Scripts** (很好的控制台脚本)
     * [american-date](#american-date) — A utility to print out dates in the American format.
     * [changelog-maker-lite](#changelog-maker-lite) — Quickly creates a beautiful changelog from the commit history.
@@ -337,14 +342,18 @@ Easily turns off all of your monitors via the CLI.
 
 For when you want to just step away and not worry so much about a lock screen.
 
+## watermark.sh
+
+Adds a watermark to videos via ffmpeg.
+
 ## wifi-autorun-on-connect.installer
 
 Installs a NetworkManager script that atomatically runs when connected to specific               #
 WiFi networks.
 
-## watermark.sh
+## wifi-show-password
 
-Adds a watermark to videos via ffmpeg.
+Shows the password of the currently connected Wi-Fi AP.
 
 ## x265.sh
 
