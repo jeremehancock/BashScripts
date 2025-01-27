@@ -78,6 +78,12 @@ function wait_until_mouse_or_keyboard_event()
             *"POINTER_MOTION"*)
                 echo "MOUSE_MOVED"; return 0;
                 ;;
+            *"TOUCH_FRAME"*)
+                echo "TOUCH_FRAME"; return 0;
+                ;;
+            *"TOUCH_MOTION"*)
+                echo "TOUCH_MOTION"; return 0;
+                ;;
         esac
     done
 }
