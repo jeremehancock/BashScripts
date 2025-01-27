@@ -109,3 +109,9 @@ Behavioral changes:
 * **[2024-09-01 12:41:07 CDT]** [bash-timer] Greatly refactored ns math to properly calculate seconds and ms.
 * **[2024-09-10 02:20:14 CDT]** [bash-timer] Fixed the "value too great" error.
 * **[2024-09-11 02:22:12 CDT]** [bash-timer] Supported non-decimal locales, properly in Bash v5.
+
+## v2.7.2 @ 2025-01-27
+
+* **[2024-12-07 19:41:20 CST]** [turn-off-monitors] Added compatibility to KDE Desktop.
+* **[2025-01-25 19:18:27 CST]** [wifi-show-password] Added a utility to show the current wifi password.
+* **[2025-01-27 10:56:29 CST]** [arch-upgrade-postgres] Added a utility to automatically upgrade postgres on Arch Linux.

@@ -15,7 +15,9 @@ Recent Changes
 ==============
 #### v2.7.2 @ 2025-01-27
 
-* **[2025-01-25 19:18:27 CST]** [wifi-show-password] Added a utility to show the current wifi password. 
+* **[2024-12-07 19:41:20 CST]** [turn-off-monitors] Added compatibility to KDE Desktop.
+* **[2025-01-25 19:18:27 CST]** [wifi-show-password] Added a utility to show the current wifi password.
+* **[2025-01-27 10:56:29 CST]** [arch-upgrade-postgres] Added a utility to automatically upgrade postgres on Arch Linux.
 
 #### v2.7.1 @ 2024-09-13
 
@@ -88,6 +90,7 @@ Table of Contents (Categorized)
     * [x265.sh](#x265sh) — Transcode to h265 HEVC via the Intel graphics card using VAAPI.
 * **Esoteric Utilities**
     * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) — Remove duplicated Arch Linux Pacman entries.
+    * [arch-upgrade-postgres](#esotericarch-upgrade-postgres) — Automates the upgrading PostgreSQL from one version to the next in Arch Linux.
     * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) — Puts everything into organized BTRFS subvolumes + turns on snapshotting.
     * [clone-github-repos.php](#esotericclone-github-reposphp) — Downloads all of a user's/org's GitHub repositories.
 * **Bash Framework**
@@ -366,6 +369,10 @@ Transcodes to x265 HEVC via ffmpeg using Intel's graphics card.
 Aids in automagically repairing duplicate Pacman database entries in Arch Linux.
 
 It's meant to resolve the rare problem: "error: duplicated database entry 'foo'"
+
+## esoteric/arch-upgrade-postgres
+
+Automates the Arch Linux wiki instructions for upgrading PostgreSQL from one version to the next.
 
 ## esoteric/git-shallow-pull
 

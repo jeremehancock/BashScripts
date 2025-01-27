@@ -82,6 +82,7 @@ Here is the translation of the document into Simplified Chinese:
     * [x265.sh](#x265sh) — 使用 Intel 显卡通过 VAAPI 转码到 h265 HEVC。
 * **神秘工具**
     * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) — 清除 Arch Linux Pacman 中的重复条目。
+    * [arch-upgrade-postgres](#esotericarch-upgrade-postgres) — 在 Arch Linux 中自动将 PostgreSQL 从一个版本升级到下一个版本。
     * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) — 将所有内容放入组织良好的 BTRFS 子卷，并启用快照。
     * [clone-github-repos.php](#esotericclone-github-reposphp) — 下载用户/组织的所有 GitHub 仓库。
 * **Bash 框架**
@@ -353,6 +354,10 @@ git alterego 的反义词。
 帮助自动修复 Arch Linux Pacman 数据库中的重复条目。
 
 旨在解决罕见问题：“错误：重复的数据库条目‘foo’”
+
+## esoteric/arch-upgrade-postgres
+
+自动执行 Arch Linux wiki 指令以将 PostgreSQL 从一个版本升级到另一个版本。
 
 ## esoteric/git-shallow-pull
 

@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+#########################################################################
+# Arch Linux Upgrade Postgres                                           #
+#                                                                       #
+#   Facilitates the upgrading of PostgreSQL on Arch Linux systems.      #
+#                                                                       #
+# Part of HopeSeekr's BashScripts Collection                            #
+# https://github.com/hopeseekr/BashScripts/                             #
+#                                                                       #
+# Copyright © 2025 Theodore R. Smith <theodore@phpexperts.pro>          #
+# GPG Fingerprint: 4BF8 2613 1C34 87AC D28F  2AD8 EB24 A91D D612 5690   #
+#                                                                       #
+# License: Creative Commons Attribution v4.0 International              #
+#########################################################################
+
+function is_root()
+{
+    [ "$EUID" -eq 0 ];
+}
+
+if ! is_root; then
+    echo "Error: Root is required."
+    exit 1
+fi
+
+cd /var/lib/postgres
+
+if [ $(stat -f --format=%T .) == 'btrfs' ]; then
+    echo "Looks like a BTRFS file system..."
+    echo "Making a snapshot of /var/lib/postgres/data in /var/lib/postgres/@data.backup"
+    btrfs subvolume create /var/lib/postgres/@data.backup
+    cp --reflink -af /var/lib/postgres/data/* /var/lib/postgres/@data.backup
+fi
+
+echo "Upgrading Postgres data..."
+
+mv /var/lib/postgres/data /var/lib/postgres/olddata
+mkdir /var/lib/postgres/data /var/lib/postgres/tmp
+chown postgres:postgres /var/lib/postgres/data /var/lib/postgres/tmp
+
+# As postgres user
+sudo -u postgres bash <<EOF
+cd /var/lib/postgres/tmp
+initdb -D /var/lib/postgres/data --locale=C.UTF-8 --encoding=UTF8 --data-checksums
+pg_upgrade -b /opt/pgsql-PG_VERSION/bin -B /usr/bin -d /var/lib/postgres/olddata -D /var/lib/postgres/data
+EOF
+
+echo "The Data has been updated. Look for any error messages."
+read "Press any key to continue or CTRL+C to abort."
+
+echo "Attempting to start the postgres server..."
+systemctl start postgresql
+
+echo "OK Now test that postgres works..."
+read -p "If it does, press 'y' to delete the data snapshot: "
+
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "You can delete the Postgres data backup by hand any time by running"
+    echo "    btrfs subvolume delete /var/lib/postgres/@data.backup/"
+    exit 0
+fi
+
+btrfs subvolume delete /var/lib/postgres/@data.backup/
+

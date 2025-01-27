@@ -83,6 +83,7 @@ Tabla de Contenidos (Categorizada)
     * [x265.sh](#x265sh) — Transcodifica a h265 HEVC a través de la tarjeta gráfica Intel usando VAAPI.
 * **Utilidades Esotéricas**
     * [arch-pacman-dupe-cleaner](#esotericarch-pacman-dupe-cleaner) — Elimina entradas duplicadas de Arch Linux Pacman.
+    * [arch-upgrade-postgres](#esotericarch-upgrade-postgres) — Automatiza la actualización de PostgreSQL de una versión a la siguiente en Arch Linux.
     * [init-btrfs-rootfs](#esotericinit-btrfs-rootfs) — Pone todo en subvolúmenes BTRFS organizados + activa las 
       instantáneas.
     * [clone-github-repos.php](#esotericclone-github-reposphp) — Descarga todos los repositorios de GitHub de un 
@@ -366,6 +367,10 @@ Transcodifica a x265 HEVC a través de ffmpeg utilizando la tarjeta gráfica de 
 Ayuda a reparar automágicamente entradas duplicadas en la base de datos de Pacman en Arch Linux.
 
 Está destinado a resolver el raro problema: "error: duplicated database entry 'foo'"
+
+## esoteric/arch-upgrade-postgres
+
+Automatiza las instrucciones wiki de Arch Linux para actualizar PostgreSQL de una versión a la siguiente.
 
 ## esoteric/git-shallow-pull
 
