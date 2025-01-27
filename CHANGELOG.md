@@ -113,5 +113,6 @@ Behavioral changes:
 ## v2.7.2 @ 2025-01-27
 
 * **[2024-12-07 19:41:20 CST]** [turn-off-monitors] Added compatibility to KDE Desktop.
+* **[2025-01-19 21:58:12 CET]** [turn-off-monitors] Added support for touch screen wakeup.
 * **[2025-01-25 19:18:27 CST]** [wifi-show-password] Added a utility to show the current wifi password.
 * **[2025-01-27 10:56:29 CST]** [arch-upgrade-postgres] Added a utility to automatically upgrade postgres on Arch Linux.
