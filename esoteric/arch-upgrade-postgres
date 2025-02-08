@@ -23,6 +23,8 @@ if ! is_root; then
     exit 1
 fi
 
+pacman --noconfirm -Sy  postgresql-old-upgrade
+
 cd /var/lib/postgres
 
 if [ $(stat -f --format=%T .) == 'btrfs' ]; then
@@ -39,10 +41,15 @@ mkdir /var/lib/postgres/data /var/lib/postgres/tmp
 chown postgres:postgres /var/lib/postgres/data /var/lib/postgres/tmp
 
 # As postgres user
+# Starting and stopping it fixes the error:
+# The source cluster was not shut down cleanly, state reported as: "in production"
+
 sudo -u postgres bash <<EOF
 cd /var/lib/postgres/tmp
 initdb -D /var/lib/postgres/data --locale=C.UTF-8 --encoding=UTF8 --data-checksums
-pg_upgrade -b /opt/pgsql-PG_VERSION/bin -B /usr/bin -d /var/lib/postgres/olddata -D /var/lib/postgres/data
+/opt/pgsql-*/bin/pg_ctl -D /var/lib/postgres/olddata start
+/opt/pgsql-*/bin/pg_ctl -D /var/lib/postgres/olddata stop
+pg_upgrade -b /opt/pgsql-*/bin -B /usr/bin -d /var/lib/postgres/olddata -D /var/lib/postgres/data
 EOF
 
 echo "The Data has been updated. Look for any error messages."
